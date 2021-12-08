@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.contain {
+  width: 600px;
+  height: 250px;
+  margin: 200px auto;
+  background-color: rgba(169, 169, 169, 0.5);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.fromWords {
+  display: flex;
+  width: 100%;
+}
+.place {
+  height: 35px;
+  border-radius: 3px;
+  border: 1px gray solid;
+  outline: none;
+  margin: 10px 0;
+}
+.title {
+  font-weight: bold;
+}
+.buttonAdd {
+  background-color: orange;
+  color: black;
+}
+.buttonReset {
+  background-color: darkred;
+  color: white;
+}
+.button {
+  width: 100px;
+}
+.button:hover {
+  border: 2px white solid;
+}
+.buttonCenzor:hover {
+  border: 2px white solid;
+}
+.buttonCenzor {
+  background-color: green;
+  color: white;
+}
+.word {
+  width: 350px;
+  padding-left: 5px;
+}
+.badWords {
+  color: darkred;
+  font-weight: bold;
+}
+.word:focus {
+  outline: 2px black solid;
+}
+textarea {
+  height: 100px;
+  resize: none;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  border-radius: 3px;
+}

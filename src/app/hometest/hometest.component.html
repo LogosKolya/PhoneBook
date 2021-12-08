@@ -1,0 +1,13 @@
+<div class="contain">
+  <div class="fromWords">
+    <div class="title">Bad words: {{ content }}</div>
+    <div class="badWords"></div>
+  </div>
+  <div class="flex">
+    <input type="text" class="place word" [placeholder]="wordPlace" [(ngModel)]="wordValue" [style.border]="isBorderWord ? 'none' : '2px darkred solid'">
+    <input type="button" class="place button buttonAdd" value="Add" (click)="add()">
+    <input type="button" class="place button buttonReset" value="reset" (click)="reset()">
+  </div>
+  <textarea class="textStr" [(ngModel)]="textStrValue" [placeholder]="textStrPlaceholder" [style.border]="isBorderText ? 'none' : '2px darkred solid'"></textarea>
+  <input type="button" class="place buttonCenzor" value="Cenzor" (click)="censor()">
+</div>
